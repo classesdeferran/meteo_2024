@@ -4,6 +4,8 @@ error_reporting(0);
 // año actual
 $year = date("Y");
 
+
+
 // ciudad por defecto
 $ciudad = "Barcelona";
 
@@ -43,8 +45,8 @@ if($_GET) {
     $amanecer=  ($amanecer['hours'].":".$amanecer['minutes']);
     $puesta = ($puesta['hours'].":".$puesta['minutes']);
     
+    $_GET = null;
 
-    
 
    
     
@@ -71,7 +73,7 @@ if($_GET) {
         <form method="GET">
           <label for="city">Ciudad:</label>
           <div>
-            <input type="text" id="city" name="city"  />
+            <input type="text" id="city" name="city" placeholder="Ciudad a buscar" />
             <button type="submit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

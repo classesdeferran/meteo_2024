@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+      url('../fonts/Poppins-Medium.woff') format('woff'),
+      url('../fonts/Poppins.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
 }
+
 
 :root {
   --bg-color: #125da9;
@@ -20,7 +33,7 @@ h1,
 p,
 label {
   color: var(--text-color-h1);
-  font-weight: 600;
+  font-weight: 400;
 }
 span {
   color: var(--text-color-datos);
