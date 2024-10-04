@@ -64,6 +64,7 @@ if($_GET) {
     <meta name="description" content="Aplicación meterológica por ciudades" />
     <meta name="keywords" content="Meteo, Wheater, El tiempo" />
     <title>Meteo</title>
+    <link rel="shortcut icon" href="img/favicon2.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
@@ -72,7 +73,7 @@ if($_GET) {
       <div>
         <form method="GET">
           <label for="city">Ciudad:</label>
-          <div>
+          <div class="div_input">
             <input type="text" id="city" name="city" placeholder="Ciudad a buscar" />
             <button type="submit">
               <svg
@@ -100,9 +101,9 @@ if($_GET) {
               <p class="temp_actual"><span><?php echo $temp_actual ?>ºC</span></p>
             </div>
             <div>
-              <p class="datos_sec">Mínima <span><?php echo $temp_min ?>ºC</span></p>
-              <p class="datos_sec">Máxima <span><?php echo $temp_max ?>ºC</span></p>
-              <p class="datos_sec">Humedad <span><?php echo $humedad ?>%</span></p>
+              <p class="datos_sec"> <span class="text_aux">Mínima</span>  <span><?php echo $temp_min ?>ºC</span></p>
+              <p class="datos_sec"><span class="text_aux">Máxima</span> <span><?php echo $temp_max ?>ºC</span></p>
+              <p class="datos_sec"><span class="text_aux">Humedad</span> <span><?php echo $humedad ?>%</span></p>
             </div>
           </div>
 

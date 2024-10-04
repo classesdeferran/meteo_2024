@@ -51,8 +51,14 @@ main div:first-child {
 }
 
 form {
-  max-width: 50vw;
+  max-width: 60vw;
   margin: 0 auto;
+
+  @media (width < 450px) {
+    margin: 0;
+    padding: 3vw;
+    max-width: 100%;
+  }
 
   input {
     font-size: 1.2rem;
@@ -64,6 +70,10 @@ form {
     width: 90%;
     transition: .3s;
     color: white;
+
+    @media (width < 450px) {
+      width: 100%;
+    }
 
     &:focus {
       border-bottom: 5px solid var(--text-color-h1);
@@ -87,7 +97,13 @@ form {
 
   @media (width < 1000px) {
     grid-template-columns: 1fr;
+    width: 100%;
+    margin: 2vw;
   }
+}
+
+.div_input {
+  width: 100%;
 }
 
 .icono_ppal img {
@@ -143,4 +159,9 @@ footer {
   p {
     font-size: 1.5rem;
   }
+}
+
+span.text_aux {
+  color: white;
+  font-size: .8rem;
 }
